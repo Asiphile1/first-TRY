@@ -1,0 +1,97 @@
+body {
+  font-family: 'Karla', sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-color: hsl(204, 43%, 93%);
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 900px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.join-community {
+  background-color: white;
+  color: hsl(218, 22%, 67%);
+  padding: 40px 20px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.join-community .highlight {
+  color: hsl(71, 73%, 54%);
+}
+
+.bottom-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.monthly-subscription,
+.why-us {
+  flex: 1 1 100%;
+  padding: 20px;
+}
+
+.monthly-subscription {
+  background-color: hsl(210, 44%, 93%);
+  color: hsl(218, 22%, 67%);
+}
+
+.monthly-subscription .price {
+  font-size: 36px;
+  font-weight: 700;
+  color: hsl(179, 62%, 43%);
+}
+
+.why-us {
+  background-color: hsl(218, 22%, 67%);
+  color: white;
+}
+
+.why-us ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: hsl(204, 43%, 93%);
+}
+
+.attribution a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .bottom-row {
+    flex-wrap: nowrap;
+  }
+
+  .monthly-subscription,
+  .why-us {
+    flex: 1 1 50%;
+  }
+}
